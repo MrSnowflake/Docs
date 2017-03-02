@@ -478,7 +478,7 @@ The following subsections will show how to define different input resources for 
 
 *Turn on/off a led, a relay, etc*
 
-This kind of resources only requires an on/off state so it can be enabled or disabled as required. As the `pson` type han hold multiple data types, we can think that the `pson` parameter of the input function is like a boolean. 
+This kind of resources only requires an on/off state so it can be enabled or disabled as required. As the `pson` type can hold multiple data types, we can think that the `pson` parameter of the input function is like a boolean. 
  
 So, inside the `setup` function you can place a resource called `led` (but you can use any other name), of input type (using the operator `<<`), that takes a reference to a `pson` parameter. This example will turn on/off the digital pin 10 using a ternary operator over the `in` parameter.
 
